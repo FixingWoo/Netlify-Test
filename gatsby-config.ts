@@ -1,3 +1,4 @@
+require("dotenv").config();
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
@@ -22,6 +23,13 @@ const config: GatsbyConfig = {
       options: {
         name: `pages`,
         path: `${__dirname}/src/blog-posts/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `9g80biyl7v2c`,
+        accessToken: `OPwwtdHCnELYebat3uud-F5csPpPKnfKvGToCDHeSSs`,
       },
     },
   ],
