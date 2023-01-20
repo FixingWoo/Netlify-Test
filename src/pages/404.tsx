@@ -8,3 +8,5 @@ const NotFoundPage: React.FC<PageProps> = () => {
     </main>
   );
 };
+
+export default NotFoundPage;
