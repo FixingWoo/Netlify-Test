@@ -9,7 +9,7 @@ const IndexPage: React.FC<PageProps> = () => {
     <>
       <div>
         <Layout title="Home Page">
-          <h1>메인 회면</h1>
+          <h1>메인 화면</h1>
         </Layout>
       </div>
     </>
