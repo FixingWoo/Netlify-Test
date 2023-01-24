@@ -2,8 +2,9 @@ import React from "react";
 import Seo from "../../components/Seo";
 import Layout from "../../components/Layout";
 import { graphql } from "gatsby";
+import "../../styles/post.css";
 
-export default function BlogPost({ data, children }) {
+export default function Post({ data, children }) {
   return (
     <Layout>
       <div>{children}</div>
@@ -12,14 +13,13 @@ export default function BlogPost({ data, children }) {
 }
 
 export const query = graphql`
-  query BlogDetail($frontmatter__slug: String) {
+  query PostDetail($frontmatter__slug: String) {
     mdx(frontmatter: { slug: { eq: $frontmatter__slug } }) {
       body
       frontmatter {
         title
         category
         date
-        author
         slug
       }
     }

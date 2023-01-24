@@ -1,30 +1,24 @@
-import { Link } from "gatsby";
 import React from "react";
+import styled from "styled-components";
+import Header from "./Header";
 
 interface Ilayout {
   children?: any;
   title: string;
 }
 
+const Section = styled.section`
+  padding-top: 80px;
+  width: 82vw;
+  margin: 0 auto;
+`;
+
 export default function Layout({ children, title }: Ilayout) {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about-us">About Us</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-        </ul>
-      </nav>
+      <Header />
       <main>
-        <h1>{title}</h1>
-        <section>{children}</section>
+        <Section>{children}</Section>
       </main>
     </div>
   );
