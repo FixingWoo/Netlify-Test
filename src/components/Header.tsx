@@ -29,6 +29,7 @@ const Logo = styled.span`
 const Nav = styled.nav`
   ul {
     display: flex;
+    list-style: none;
 
     a,
     span {

@@ -1,17 +1,17 @@
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 hr {
-  margin-bottom: 3rem;
+  margin: 3rem 0;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin: 3rem 0;
 }
 
 h3 {
@@ -21,14 +21,43 @@ h3 {
 }
 
 p {
+  font-size: 1.2rem;
   margin-bottom: 1.4rem;
 }
 
 ol {
-  list-style: circle;
+  font-size: 1.5rem;
+  list-style: inside decimal;
   margin-bottom: 1rem;
 }
 
 li {
+  margin: 2rem 0;
   font-weight: 600;
+}
+
+img {
+  margin: 3rem 0;
+}
+
+.logo {
+  width: 700px;
+}
+
+.jam,
+.dif {
+  width: 800px;
+}
+
+strong {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+a {
+  color: #12b886;
+}
+
+a:hover {
+  text-decoration: underline;
 }

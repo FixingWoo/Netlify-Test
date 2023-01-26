@@ -16,7 +16,7 @@ const StyledLink = styled(Link)`
 
   h2 {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 5px;
   }
 
