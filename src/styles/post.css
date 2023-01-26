@@ -45,8 +45,13 @@ img {
 }
 
 .jam,
-.dif {
+.dif,
+.deploy {
   width: 800px;
+}
+
+.deploy {
+  margin: 1rem 0;
 }
 
 strong {

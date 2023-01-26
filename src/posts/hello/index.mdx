@@ -1,9 +1,71 @@
 ---
-title: Deploy Gatsby!
+title: Deploy Gatsby
 category: Gatsby
 date: "2023-01-25"
-summary: Use Netlify
+summary: Deploy, Netlify
 slug: deploy
 ---
 
-## Deploy Gatsby!
+import Logo from "../../images/logo2.jpg";
+import Dep1 from "../../images/dep1.png";
+import Dep2 from "../../images/dep2.png";
+import Dep3 from "../../images/dep3.png";
+import Dep4 from "../../images/dep4.png";
+
+# Deploy Gatsby
+
+---
+
+<img className="logo" src={Logo} alt="로고" />
+
+**Netlify** - GitHub에 소스 파일을 저장하고 이를 빌드하여 결과물을 CDN 통해 웹사이트 호스팅 업체
+
+## 선정 이유
+
+1. DNS 적용 가능
+
+Github.io와 다르게 metaverse.bluedigm.com 사용자 정의 도메인 사용
+
+2. 지속적인 배포
+
+지속적인 배포를 활용하여 사이트 자산을 생성하는 자동화된 빌드 프로세스 시작
+
+프로젝트를 깃허브 원격 저장소에 업로드하면 자동 배포 수행
+
+3. 무료 사용 가능
+
+정해진 리소스가 있지만 임계점을 넘을 일은 없을거라 판단
+
+한달에 빌드 시간이 300분 이상, 월 트래픽 100G 이상이 되어야 과금 발생
+
+## 배포 절차
+
+1. Netlify 회원가입
+
+[https://www.netlify.com/](https://www.netlify.com/)
+
+접속하여 회원가입 후 로그인
+
+2. Netlify와 Github Repository 연동
+
+2.1 Sites > Add new site > Import an existing project 클릭 (New site from Git)
+
+<img className="deploy" src={Dep1} alt="deploy1" />
+
+2.2 호스팅할 소스 원격 저장소를 선택
+
+<img className="deploy" src={Dep2} alt="deploy2" />
+
+2.3 원격 저장소 내 브랜치 선택
+
+<img className="deploy" src={Dep3} alt="deploy3" />
+
+3. 배포 수행
+
+<img className="deploy" src={Dep4} alt="deploy4" />
+
+---
+
+참조
+
+[https://docs.netlify.com/get-started/](https://docs.netlify.com/get-started/)
