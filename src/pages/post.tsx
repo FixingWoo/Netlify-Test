@@ -13,11 +13,13 @@ const StyledLink = styled(Link)`
   cursor: pointer;
   padding: 20px;
   border-radius: 10px;
+  text-decoration: none;
+  color: #333;
 
   h2 {
     font-weight: 700;
     font-size: 2rem;
-    margin-bottom: 5px;
+    margin: 0;
   }
 
   p {

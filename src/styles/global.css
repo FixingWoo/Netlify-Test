@@ -110,6 +110,7 @@ section {
 }
 body {
   line-height: 1;
+  font-size: 18px;
 }
 /* menu,
 ol,
@@ -143,8 +144,4 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-}
-p {
-  line-height: 2rem;
-  word-break: keep-all;
 }

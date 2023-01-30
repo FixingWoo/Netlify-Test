@@ -11,6 +11,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-mdx`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -30,6 +31,16 @@ const config: GatsbyConfig = {
       options: {
         spaceId: `9g80biyl7v2c`,
         accessToken: `OPwwtdHCnELYebat3uud-F5csPpPKnfKvGToCDHeSSs`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
+        ],
+        display: "swap",
       },
     },
   ],

@@ -2,12 +2,12 @@ import React from "react";
 import Seo from "../../components/Seo";
 import Layout from "../../components/Layout";
 import { graphql } from "gatsby";
-import "../../styles/post.css";
+import "../../styles/post.scss";
 
 export default function Post({ data, children }) {
   return (
     <Layout>
-      <div>{children}</div>
+      <div className="post-wrapper">{children}</div>
     </Layout>
   );
 }

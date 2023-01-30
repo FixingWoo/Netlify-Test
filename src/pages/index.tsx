@@ -2,7 +2,7 @@ import * as React from "react";
 import { PageProps } from "gatsby";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
-import "../components/global.css";
+import "../styles/global.css";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (

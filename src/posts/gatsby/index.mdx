@@ -16,21 +16,27 @@ import Dif from "../../images/dif.png";
 
 <img className="logo" src={Logo} alt="로고" />
 
-**Gatsby**는 **React** + **JAM Stack**을 활용한 **정적 웹사이트 생성기**
-
-먼저 Gatsby의 핵심인 JAM Stack에 대해 먼저 알아보겠습니다.
+**Gatsby** = **React** + **JAM Stack**
 
 ## JAM Stack?
 
-공식 도큐먼트에 의하면 JAM Stack은 데이터 및 비즈니스 논리에서 웹 경험 계층을 분리하여 유연성, 확장성, 성능 및 유지 관리성을 향상시키는 아키텍처 접근 방식
+웹 애플리케이션에서 렌더링 할 화면을 **Pre-render** 하고 이를 **CDN**에서 제공하여 빠르고 안전한 앱으로 웹 서버를 관리할 필요 X
 
 <img className="jam" src={Jam} alt="JAM Stack" />
 
-**JS** - 클라이언트의 처리는 JS가 수행
+1. JS
 
-**API** - 모든 기능 및 로직은 재사용 가능한 API가 처리
+클라이언트의 처리(UI/UX) 수행
 
-**Markup** - SSG를 이용하여 Markup을 미리 생성
+2. API
+
+모든 기능 및 로직은 재사용 가능한 API가 처리
+동적 또는 사용자 지정 콘텐츠 처리 (GraphQL, GA...)
+
+3. Markup
+
+모든 콘텐츠를 구축
+마크업을 미리 빌드하고 CDN 전달
 
 <img className="dif" src={Dif} alt="차이점" />
 
@@ -40,17 +46,19 @@ import Dif from "../../images/dif.png";
 
 **SSR**
 
-서버가 클라이언트의 요청을 받을때마다 새로운 화면 제공
+서버에서 렌더링 준비를 마친 상태로 클라이언트에게 응답
+
+랜더링과 동시에 JS 파일 다운로드 후 컴파일 과정 필요
 
 **CSR**
 
-서버가 클라이언트의 요청을 받아 클라이언트에게 JS 파일 제공
+서버 응답 결과물을 통해 클라이언트에서 렌더링 수행
 
 **JAM Script (SSG)**
 
-빌드 시점에 각 페이지의 리소스를 HTML 파일로 변환
+빌드 시점에 각 화면 구성 리소스를 HTML 파일로 변환
 
-요청이 있을 때마다 적잘한 HTML을 정적으로 제공
+요청이 있을 때마다 리소스를 정적으로 제공
 
 정적으로 제공하기 때문에 서버 리소스 사용 X
 
@@ -58,7 +66,7 @@ import Dif from "../../images/dif.png";
 
 2. SEO
 
-SSR, CSR은 클라이언트에게 서버로부터 리소스를 다운받아 렌더링하기 전까지 빈 화면 제공
+CSR은 리소스를 다운받아 렌더링하기 전까지 빈 화면 제공
 
 즉, 초기 HTML이 비어있기 때문에 크롤링 봇이 데이터 수집이 어려움
 
